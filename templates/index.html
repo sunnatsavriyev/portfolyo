@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sunnat Savriyev Portfolyo</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/unicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
+    
+  <body>
+
+    {% include 'navbar.html' %}
+
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Hush Kelibsiz! <span class="mobile-block">Mening Portfolio Saytimga</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Salom! Mening ismim</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Savriyev Sunnat</span>
+                                    <span class="animated-item">Backend Developer</span>
+                                    <span class="animated-item">Web Designer</span>
+                                </div>
+                        </h1>
+                        <br>
+                        <p>Muvaffaqiyatli mahsulotni yaratish juda qiyin. Men foydalanuvchi tajribasini loyihalash, databaza va web-ishlab chiqishda yaxshiman..</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="{% static 'resume/resume.pdf' %}" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img style="width: 400px; height: 500px; border-radius: 20%;" src="images/project/photo1.jpg" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="project py-5" id="project">
+      <div class="container">
+              
+              <div class="row">
+                <div class="col-lg-11 text-center mx-auto col-12">
+  
+                    <div class="col-lg-8 mx-auto">
+                      <h2>My Projects</h2>
+                    </div>
+  
+                    <div class="owl-carousel owl-theme">
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="{% static 'images/project/photo3.jpg' %}" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+  
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="{% static 'images/project/photo4.jpg' %}" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+  
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="{% static 'images/project/photo5.jpg' %}" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="project-info">
+                          <img src="{% static 'images/project/photo6.jpg' %}" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+  
+
+                    </div>
+  
+                </div>
+              </div>
+      </div>
+    </section>
+
+    {% include 'contact.html' %}
+    {% include 'footer.html' %}
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/Headroom.js' %}"></script>
+    <script src="{% static 'js/jQuery.headroom.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/smoothscroll.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+  </body>
+</html>
